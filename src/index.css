@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand colors */
+    --logo-gold: #967C44;
+    --logo-blue: #002266;
+
+    /* Core backgrounds */
+    --background: 0 0% 100%;
+    --foreground: 222 34% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 34% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 34% 17%;
+
+    /* Royal blue — primary, links, buttons */
+    --primary: 220 100% 20%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Mist / Surface */
+    --secondary: 210 40% 98%;
+    --secondary-foreground: 222 34% 17%;
+
+    --muted: 213 32% 95%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Logo gold — accents, highlights */
+    --accent: 41 38% 43%;
+    --accent-foreground: 222 34% 17%;
+
+    --gold: 41 38% 43%;
+    --gold-dark: 41 38% 35%;
+    --gold-foreground: 222 34% 17%;
+
+    /* Deep blue sections (hero bands, footers) */
+    --deep: 220 100% 20%;
+    --deep-foreground: 0 0% 100%;
+
+    /* Surface bg */
+    --surface: 210 40% 98%;
+    --surface-mist: 213 32% 95%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 76% 36%;
+
+    --border: 213 27% 84%;
+    --input: 213 27% 84%;
+    --ring: 220 100% 20%;
+
+    --radius: 4px;
+
+    /* Shadows */
+    --shadow-card: 0 1px 3px rgba(0,0,0,0.08);
+    --shadow-hover: 0 4px 10px rgba(0,0,0,0.12);
+    --shadow-modal: 0 20px 60px rgba(0,0,0,0.20);
+
+    /* Spacing */
+    --section-padding-y: clamp(4rem, 7vw, 7rem);
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 220 100% 20%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 213 32% 95%;
+    --sidebar-accent-foreground: 222 34% 17%;
+    --sidebar-border: 213 27% 84%;
+    --sidebar-ring: 220 100% 20%;
+  }
+
+  .dark {
+    --background: 222 34% 10%;
+    --foreground: 210 40% 98%;
+    --card: 222 34% 12%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 34% 12%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 41 38% 43%;
+    --primary-foreground: 222 34% 17%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 41 38% 43%;
+    --accent-foreground: 222 34% 17%;
+    --gold: 41 38% 43%;
+    --gold-dark: 41 38% 35%;
+    --gold-foreground: 222 34% 17%;
+    --deep: 220 100% 20%;
+    --deep-foreground: 0 0% 100%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 41 38% 43%;
+    --sidebar-background: 222 34% 10%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 41 38% 43%;
+    --sidebar-primary-foreground: 222 34% 17%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 17%;
+    --sidebar-ring: 41 38% 43%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body), 'Montserrat', system-ui, sans-serif;
+    font-size: 18px;
+    line-height: 1.65;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading), 'Playfair Display', Georgia, serif;
+    line-height: 1.15;
+  }
+}
