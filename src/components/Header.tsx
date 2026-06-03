@@ -4,8 +4,9 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
-import logo from "@/assets/haselwander-logo.svg";
+import logo from "@/assets/haselwander-logo.png";
 import { imageSrc } from "@/lib/image";
+import { cn } from "@/lib/utils";
 
 interface NavItem {
   label: string;
@@ -85,7 +86,7 @@ const Header = () => {
           <img
             src={imageSrc(logo)}
             alt="Haselwander Real Estate LLC"
-            className="h-[100px] w-auto"
+            className={cn("h-[100px] w-auto", !scrolled && "mix-blend-screen")}
           />
         </Link>
 
@@ -161,7 +162,11 @@ const Header = () => {
         <div className="lg:hidden fixed inset-0 top-0 bg-background z-40 overflow-y-auto">
           <div className="flex items-center justify-between p-4 border-b border-border">
             <Link href="/" className="flex items-center gap-3">
-              <img src={imageSrc(logo)} alt="Haselwander Real Estate LLC" className="h-[100px] w-auto" />
+              <img
+                src={imageSrc(logo)}
+                alt="Haselwander Real Estate LLC"
+                className="h-[100px] w-auto"
+              />
             </Link>
             <button onClick={() => setMobileOpen(false)} className="p-2" aria-label="Close menu">
               <X className="h-6 w-6" />

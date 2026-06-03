@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/haselwander-logo.png";
+import { imageSrc } from "@/lib/image";
 
 const footerLinks = [
   {
@@ -44,9 +46,13 @@ const Footer = () => {
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10">
           {/* Brand Column */}
           <div>
-            <h3 className="font-heading text-xl font-bold mb-4">
-              Haselwander<br />Real Estate
-            </h3>
+            <Link href="/" className="inline-block mb-4">
+              <img
+                src={imageSrc(logo)}
+                alt="Haselwander Real Estate LLC"
+                className="h-[100px] w-auto mix-blend-screen"
+              />
+            </Link>
             <p className="text-primary-foreground/70 text-sm font-body leading-relaxed mb-6">
               Serving the Chippewa Valley with integrity and expertise for over 60 years.
             </p>

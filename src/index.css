@@ -5,7 +5,7 @@
 @layer base {
   :root {
     /* Brand colors */
-    --logo-gold: #967C44;
+    --logo-gold: #bf9241;
     --logo-blue: #002266;
 
     /* Core backgrounds */
@@ -29,12 +29,12 @@
     --muted: 213 32% 95%;
     --muted-foreground: 215 16% 47%;
 
-    /* Logo gold — accents, highlights */
-    --accent: 41 38% 43%;
+    /* Logo gold — accents, highlights (#bf9241) */
+    --accent: 39 50% 50%;
     --accent-foreground: 222 34% 17%;
 
-    --gold: 41 38% 43%;
-    --gold-dark: 41 38% 35%;
+    --gold: 39 50% 50%;
+    --gold-dark: 39 50% 42%;
     --gold-foreground: 222 34% 17%;
 
     /* Deep blue sections (hero bands, footers) */
@@ -82,16 +82,16 @@
     --card-foreground: 210 40% 98%;
     --popover: 222 34% 12%;
     --popover-foreground: 210 40% 98%;
-    --primary: 41 38% 43%;
+    --primary: 39 50% 50%;
     --primary-foreground: 222 34% 17%;
     --secondary: 217 33% 17%;
     --secondary-foreground: 210 40% 98%;
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
-    --accent: 41 38% 43%;
+    --accent: 39 50% 50%;
     --accent-foreground: 222 34% 17%;
-    --gold: 41 38% 43%;
-    --gold-dark: 41 38% 35%;
+    --gold: 39 50% 50%;
+    --gold-dark: 39 50% 42%;
     --gold-foreground: 222 34% 17%;
     --deep: 220 100% 20%;
     --deep-foreground: 0 0% 100%;
@@ -99,15 +99,15 @@
     --destructive-foreground: 210 40% 98%;
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 41 38% 43%;
+    --ring: 39 50% 50%;
     --sidebar-background: 222 34% 10%;
     --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 41 38% 43%;
+    --sidebar-primary: 39 50% 50%;
     --sidebar-primary-foreground: 222 34% 17%;
     --sidebar-accent: 217 33% 17%;
     --sidebar-accent-foreground: 210 40% 98%;
     --sidebar-border: 217 33% 17%;
-    --sidebar-ring: 41 38% 43%;
+    --sidebar-ring: 39 50% 50%;
   }
 }
 
