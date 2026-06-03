@@ -42,6 +42,12 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-2xl">
             <FadeInSection>
+              <div className="flex items-center gap-3 mb-6">
+                <span className="h-px w-12 bg-gold" />
+                <span className="text-gold text-sm font-body font-semibold uppercase tracking-[0.2em]">
+                  Established 1965
+                </span>
+              </div>
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
                 <span className="block">Over 60 Years of</span>
                 <span className="block text-gold mt-2">Real Estate Excellence</span>
@@ -54,13 +60,13 @@ const Index = () => {
             </FadeInSection>
             <FadeInSection delay={200}>
               <div className="flex flex-wrap items-center gap-4">
-                <Button asChild size="lg" className="bg-gold text-gold-foreground hover:bg-gold-dark font-body font-semibold text-base">
+                <Button asChild size="lg" variant="gold" className="font-body font-semibold text-base">
                   <a href="tel:715-831-7077">
                     <Phone className="h-5 w-5" />
                     715-831-7077
                   </a>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-deep-foreground/30 text-foreground bg-deep-foreground/90 hover:bg-deep-foreground font-body font-semibold text-base">
+                <Button asChild size="lg" variant="outline" className="border-deep-foreground/30 text-foreground bg-deep-foreground/90 hover:bg-primary hover:text-primary-foreground hover:border-primary font-body font-semibold text-base">
                   <Link href="/services">Our Services</Link>
                 </Button>
               </div>
@@ -194,7 +200,7 @@ const Index = () => {
                 </div>
 
                 <div>
-                  <Button asChild size="lg" className="bg-gold text-gold-foreground hover:bg-gold-dark font-body font-semibold uppercase tracking-wider">
+                  <Button asChild size="lg" variant="gold" className="font-body font-semibold uppercase tracking-wider">
                     <Link href="/about">
                       Learn Our Story <ArrowRight className="h-4 w-4" />
                     </Link>
@@ -261,7 +267,7 @@ const Index = () => {
             <p className="font-body text-primary-foreground/80 max-w-lg mx-auto mb-8">
               Whether you're building, investing, or leasing — our team is ready to guide you through every step.
             </p>
-            <Button asChild size="lg" className="bg-gold text-gold-foreground hover:bg-gold-dark font-body font-semibold">
+            <Button asChild size="lg" variant="gold" className="font-body font-semibold">
               <Link href="/contact">
                 Contact Us Today <ArrowRight className="h-4 w-4" />
               </Link>

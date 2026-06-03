@@ -106,7 +106,7 @@ const PropertyPageTemplate = ({
                     <p className="text-base font-body text-muted-foreground mb-4">
                       Interested in this property? Contact our team for more information.
                     </p>
-                    <Button asChild className="w-full bg-primary hover:bg-primary/90">
+                    <Button asChild className="w-full">
                       <Link href="/contact">
                         Inquire Now <ArrowRight className="h-4 w-4" />
                       </Link>

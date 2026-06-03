@@ -200,7 +200,7 @@ const About = () => {
                         <Mail className="h-4 w-4" /> Email
                       </a>
                     </div>
-                    <Button asChild className="mt-6 bg-primary hover:bg-primary/90 font-body">
+                    <Button asChild className="mt-6 font-body">
                       <Link href="/contact">Contact {agent.name.split(" ")[0]}</Link>
                     </Button>
                   </div>

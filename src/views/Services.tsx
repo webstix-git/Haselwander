@@ -84,7 +84,7 @@ const Services = () => {
                 </div>
 
                 <div className="pt-2">
-                  <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-body font-semibold">
+                  <Button asChild variant="outline" className="font-body font-semibold">
                     <Link href="/about">Learn Our Story <ArrowRight className="h-4 w-4" /></Link>
                   </Button>
                 </div>
@@ -163,7 +163,7 @@ const Services = () => {
             <p className="font-body text-primary-foreground/80 max-w-lg mx-auto mb-8">
               Contact our team to discuss your real estate needs in the Chippewa Valley.
             </p>
-            <Button asChild size="lg" className="bg-gold text-gold-foreground hover:bg-gold-dark font-body font-semibold">
+            <Button asChild size="lg" variant="gold" className="font-body font-semibold">
               <Link href="/contact">Contact Us <ArrowRight className="h-4 w-4" /></Link>
             </Button>
           </FadeInSection>

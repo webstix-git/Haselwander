@@ -46,7 +46,7 @@ const CommercialOverview = () => {
               <p className="font-body text-muted-foreground leading-relaxed mb-8">
                 With over 60 years of experience in local real estate, our team provides the expertise needed to guide commercial land transactions with efficiency and professionalism.
               </p>
-              <Button asChild className="bg-primary hover:bg-primary/90 font-body">
+              <Button asChild className="font-body">
                 <Link href="/contact">Inquire About Commercial Land <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </FadeInSection>

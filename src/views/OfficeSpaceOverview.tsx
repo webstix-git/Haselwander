@@ -78,7 +78,7 @@ const OfficeSpaceOverview = () => {
 
           <FadeInSection delay={400}>
             <div className="text-center mt-16">
-              <Button asChild className="bg-primary hover:bg-primary/90 font-body">
+              <Button asChild className="font-body">
                 <Link href="/contact">Inquire About Office Space <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </div>

@@ -64,7 +64,7 @@ const Investment = () => {
                 </ul>
               </div>
 
-              <Button asChild className="bg-primary hover:bg-primary/90 font-body">
+              <Button asChild className="font-body">
                 <Link href="/contact">Discuss Investment Opportunities <ArrowRight className="h-4 w-4" /></Link>
               </Button>
             </FadeInSection>

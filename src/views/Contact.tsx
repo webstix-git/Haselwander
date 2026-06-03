@@ -127,7 +127,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="mt-8">
-                    <Button type="submit" className="bg-primary hover:bg-primary/90 font-body">
+                    <Button type="submit" className="font-body">
                       Send Message <ArrowRight className="h-4 w-4" />
                     </Button>
                   </div>

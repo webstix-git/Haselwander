@@ -73,7 +73,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 py-2 transition-all duration-300 ${
         scrolled
           ? "bg-background/95 backdrop-blur-md shadow-card"
           : "bg-transparent"
@@ -85,7 +85,7 @@ const Header = () => {
           <img
             src={imageSrc(logo)}
             alt="Haselwander Real Estate LLC"
-            className="h-[90px] w-auto"
+            className="h-[100px] w-auto"
           />
         </Link>
 
@@ -140,7 +140,7 @@ const Header = () => {
         <div className="hidden lg:flex items-center gap-4">
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground text-sm font-semibold font-body hover:bg-primary/90 transition-colors duration-300"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-primary bg-primary text-primary-foreground text-sm font-semibold font-body hover:bg-background hover:text-primary transition-colors duration-300"
           >
             Get in Touch
           </Link>
@@ -161,7 +161,7 @@ const Header = () => {
         <div className="lg:hidden fixed inset-0 top-0 bg-background z-40 overflow-y-auto">
           <div className="flex items-center justify-between p-4 border-b border-border">
             <Link href="/" className="flex items-center gap-3">
-              <img src={imageSrc(logo)} alt="Haselwander Real Estate LLC" className="h-[90px] w-auto" />
+              <img src={imageSrc(logo)} alt="Haselwander Real Estate LLC" className="h-[100px] w-auto" />
             </Link>
             <button onClick={() => setMobileOpen(false)} className="p-2" aria-label="Close menu">
               <X className="h-6 w-6" />

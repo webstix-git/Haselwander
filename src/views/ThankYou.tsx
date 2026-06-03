@@ -21,7 +21,7 @@ const ThankYou = () => {
                 Your message has been received. Our team will review your inquiry and get back to you shortly.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 font-body font-semibold">
+                <Button asChild size="lg" className="font-body font-semibold">
                   <Link href="/">
                     Return Home <ArrowRight className="h-4 w-4" />
                   </Link>
