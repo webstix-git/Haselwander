@@ -50,7 +50,7 @@ const Footer = () => {
               <img
                 src={imageSrc(logo)}
                 alt="Haselwander Real Estate LLC"
-                className="h-[100px] w-auto"
+                className="h-[75px] w-auto"
               />
             </Link>
             <p className="text-primary-foreground/70 text-sm font-body leading-relaxed mb-6">
