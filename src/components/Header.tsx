@@ -74,74 +74,75 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 py-2 transition-all duration-300 ${
-        scrolled
-          ? "bg-background/95 backdrop-blur-md shadow-card"
-          : "bg-transparent"
-      }`}
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 py-2 min-[1200px]:max-[1350px]:py-1 transition-all duration-300",
+        scrolled ? "bg-background/95 backdrop-blur-md shadow-card" : "bg-transparent"
+      )}
     >
-      <div className="container mx-auto flex items-center justify-between px-4 lg:px-8">
+      <div className="container mx-auto flex items-center px-4 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 shrink-0">
           <img
             src={imageSrc(logo)}
             alt="Haselwander Real Estate LLC"
-            className={cn("h-[100px] w-auto", !scrolled && "mix-blend-screen")}
+            className={cn(
+              "h-[100px] w-auto min-[1200px]:max-[1350px]:h-[80px]",
+              !scrolled && "mix-blend-screen"
+            )}
           />
         </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-1">
-          {navItems.map((item) => (
-            <div
-              key={item.label}
-              className="relative group"
-              onMouseEnter={() => item.children && setOpenDropdown(item.label)}
-              onMouseLeave={() => setOpenDropdown(null)}
-            >
-              <Link
-                href={item.href}
-                className={`flex items-center gap-1 px-3 py-2 text-base font-medium font-body transition-colors duration-300 ${
-                  isActive(item.href)
-                    ? "text-primary border-b-2 border-primary"
-                    : scrolled
-                    ? "text-foreground hover:text-primary"
-                    : "text-foreground/80 hover:text-primary"
-                }`}
+        {/* Desktop Nav + CTA — right aligned */}
+        <div className="hidden lg:flex items-center gap-3 ml-auto">
+          <nav className="flex items-center gap-0.5">
+            {navItems.map((item) => (
+              <div
+                key={item.label}
+                className="relative group"
+                onMouseEnter={() => item.children && setOpenDropdown(item.label)}
+                onMouseLeave={() => setOpenDropdown(null)}
               >
-                {item.label}
-                {item.children && <ChevronDown className="h-3 w-3" />}
-              </Link>
+                <Link
+                  href={item.href}
+                  className={`flex items-center gap-1 px-2.5 py-2 text-base font-medium font-body transition-colors duration-300 ${
+                    isActive(item.href)
+                      ? "text-primary border-b-2 border-primary"
+                      : scrolled
+                      ? "text-foreground hover:text-primary"
+                      : "text-foreground/80 hover:text-primary"
+                  }`}
+                >
+                  {item.label}
+                  {item.children && <ChevronDown className="h-3 w-3" />}
+                </Link>
 
-              {/* Dropdown */}
-              {item.children && openDropdown === item.label && (
-                <div className="absolute top-full left-0 pt-1 min-w-[220px]">
-                  <div className="bg-background rounded-lg shadow-hover border border-border py-2">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        className={`block px-4 py-2.5 text-sm font-body transition-colors duration-200 ${
-                          isActive(child.href)
-                            ? "text-primary bg-muted"
-                            : "text-foreground hover:text-primary hover:bg-muted"
-                        }`}
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
+                {/* Dropdown */}
+                {item.children && openDropdown === item.label && (
+                  <div className="absolute top-full right-0 pt-1 min-w-[220px]">
+                    <div className="bg-background rounded-lg shadow-hover border border-border py-2">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className={`block px-4 py-2.5 text-sm font-body transition-colors duration-200 ${
+                            isActive(child.href)
+                              ? "text-primary bg-muted"
+                              : "text-foreground hover:text-primary hover:bg-muted"
+                          }`}
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              )}
-            </div>
-          ))}
-        </nav>
+                )}
+              </div>
+            ))}
+          </nav>
 
-        {/* Header CTAs */}
-        <div className="hidden lg:flex items-center gap-4">
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-primary bg-primary text-primary-foreground text-sm font-semibold font-body hover:bg-background hover:text-primary transition-colors duration-300"
+            className="inline-flex items-center gap-2 shrink-0 px-4 py-2 rounded-md border border-primary bg-primary text-primary-foreground text-sm font-semibold font-body hover:bg-background hover:text-primary transition-colors duration-300"
           >
             Get in Touch
           </Link>
@@ -150,7 +151,7 @@ const Header = () => {
         {/* Mobile Toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="lg:hidden p-2 text-foreground"
+          className="lg:hidden p-2 text-foreground ml-auto"
           aria-label="Toggle menu"
         >
           {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
