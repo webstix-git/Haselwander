@@ -75,7 +75,7 @@ const Header = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 py-2 min-[1200px]:max-[1350px]:py-1 transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 py-2 min-[1140px]:max-[1250px]:py-2 min-[1251px]:max-[1350px]:py-1 transition-all duration-300",
         scrolled ? "bg-background/95 backdrop-blur-md shadow-card" : "bg-transparent"
       )}
     >
@@ -86,7 +86,7 @@ const Header = () => {
             src={imageSrc(logo)}
             alt="Haselwander Real Estate LLC"
             className={cn(
-              "h-[100px] w-auto min-[1200px]:max-[1350px]:h-[80px]",
+              "h-[100px] w-auto min-[1140px]:max-[1250px]:h-[75px] min-[1251px]:max-[1350px]:h-[80px]",
               !scrolled && "mix-blend-screen"
             )}
           />
@@ -104,13 +104,14 @@ const Header = () => {
               >
                 <Link
                   href={item.href}
-                  className={`flex items-center gap-1 px-2.5 py-2 text-base font-medium font-body transition-colors duration-300 ${
+                  className={cn(
+                    "flex items-center gap-1 px-2.5 py-2 text-base min-[1140px]:max-[1250px]:text-[15px] font-medium font-body transition-colors duration-300",
                     isActive(item.href)
                       ? "text-primary border-b-2 border-primary"
                       : scrolled
-                      ? "text-foreground hover:text-primary"
-                      : "text-foreground/80 hover:text-primary"
-                  }`}
+                        ? "text-foreground hover:text-primary"
+                        : "text-foreground/80 hover:text-primary"
+                  )}
                 >
                   {item.label}
                   {item.children && <ChevronDown className="h-3 w-3" />}
@@ -142,7 +143,7 @@ const Header = () => {
 
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 shrink-0 px-4 py-2 rounded-md border border-primary bg-primary text-primary-foreground text-sm font-semibold font-body hover:bg-background hover:text-primary transition-colors duration-300"
+            className="inline-flex items-center gap-2 shrink-0 px-4 min-[1140px]:max-[1250px]:px-[10px] py-2 rounded-md border border-primary bg-primary text-primary-foreground text-sm min-[1140px]:max-[1250px]:text-[15px] font-semibold font-body hover:bg-background hover:text-primary transition-colors duration-300"
           >
             Get in Touch
           </Link>
