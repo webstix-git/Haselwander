@@ -39,4 +39,10 @@ export function createPageMetadata({
   };
 }
 
-export const defaultMetadata: Metadata = createPageMetadata({});
+export const defaultMetadata: Metadata = {
+  ...createPageMetadata({}),
+  icons: {
+    icon: [{ url: "/favicon.png", type: "image/png" }],
+    apple: [{ url: "/favicon.png", type: "image/png" }],
+  },
+};

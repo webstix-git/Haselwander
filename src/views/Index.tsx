@@ -130,7 +130,7 @@ const Index = () => {
                       <h3 className="font-heading text-2xl font-bold text-deep-foreground">{cat.title}</h3>
                     </div>
                     <p className="font-body text-base text-deep-foreground/80">{cat.desc}</p>
-                    <span className="inline-flex items-center gap-1 mt-3 text-gold text-base font-body font-medium group-hover:gap-2 transition-all">
+                    <span className="inline-flex items-center gap-1 mt-3 text-white text-base font-body font-medium group-hover:gap-2 transition-all">
                       View Properties <ArrowRight className="h-4 w-4" />
                     </span>
                   </div>

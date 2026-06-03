@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
-import logo from "@/assets/haselwander-logo.png";
+import logo from "@/assets/haselwander-logo-footer.png";
 import { imageSrc } from "@/lib/image";
 
 const footerLinks = [
@@ -50,7 +50,7 @@ const Footer = () => {
               <img
                 src={imageSrc(logo)}
                 alt="Haselwander Real Estate LLC"
-                className="h-[100px] w-auto mix-blend-screen"
+                className="h-[100px] w-auto"
               />
             </Link>
             <p className="text-primary-foreground/70 text-sm font-body leading-relaxed mb-6">
