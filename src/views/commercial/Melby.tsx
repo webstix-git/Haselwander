@@ -5,11 +5,17 @@ const Melby = () => (
   <Layout>
     <PropertyPageTemplate
       title="Melby"
-      subtitle="Commercial land development opportunity in the Chippewa Valley."
+      subtitle="Commercial site for development in the Chippewa Valley."
       status="To Be Developed"
-      description="The Melby commercial development offers land opportunities for a variety of business types including industrial, medical, financial, and retail. Located in the Chippewa Valley, this development is planned to provide quality commercial lots with excellent access and infrastructure. Content for this page will be provided by the client."
-      location="Chippewa Valley, WI"
-      features={["Commercial zoning", "Multiple business types welcome", "Quality infrastructure planned", "Excellent access", "Chippewa Valley location"]}
+      description="The Melby commercial development is a 10-acre commercial site for development, totaling 435,600 square feet. The property is adjacent to Hwy 53 North and Melby Road with a private entrance off 118th Street. This commercial site is ideal for auto sales, church, or professional building development."
+      location="Adjacent to Hwy 53 North and Melby Road, private entrance off 118th Street"
+      features={[
+        "10 acres — 435,600 square feet",
+        "Adjacent to Hwy 53 North and Melby Road",
+        "Private entrance off 118th Street",
+        "Commercial site for development",
+        "Ideal for auto sales, church, or professional building",
+      ]}
       parentLink={{ label: "Commercial", href: "/commercial" }}
     />
   </Layout>

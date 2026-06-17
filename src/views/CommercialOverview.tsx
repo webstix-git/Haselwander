@@ -60,7 +60,7 @@ const CommercialOverview = () => {
                   <span className="text-xs font-body font-semibold px-2 py-0.5 rounded-sm bg-gold/10 text-gold-dark">To Be Developed</span>
                   <h3 className="font-heading text-[22px] font-semibold text-foreground mt-2 mb-2 group-hover:text-primary transition-colors">Melby</h3>
                   <p className="font-body text-base text-muted-foreground mb-3">
-                    Commercial land development opportunity in the Chippewa Valley.
+                    10-acre commercial site for development adjacent to Hwy 53 North and Melby Road.
                   </p>
                   <span className="inline-flex items-center gap-1 text-primary text-base font-body font-medium group-hover:gap-2 transition-all">
                     View Details <ArrowRight className="h-4 w-4" />

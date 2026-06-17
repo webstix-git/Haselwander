@@ -2,7 +2,7 @@ import Melby from "@/views/commercial/Melby";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-  title: "Melby Subdivision",
+  title: "Melby",
   path: "/commercial/melby",
 });
 

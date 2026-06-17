@@ -11,15 +11,15 @@ const agents = [
     name: "Neil F. Haselwander",
     title: "Broker / Owner",
     bio: "With over 60 years in the Chippewa Valley real estate industry, Neil Haselwander brings unmatched experience and deep community roots to every transaction. As co-founder of Haselwander Bros., Inc. in 1965, Neil has built a legacy of trust, integrity, and results.",
-    phone: "715-831-7077",
-    email: "info@haselwanderrealestatellc.com",
+    phone: "715-577-1429",
+    email: "neil@haselwanderrealestatellc.com",
   },
   {
     name: "Kim M. Gilmore",
-    title: "Real Estate Agent",
+    title: "Real Estate Broker",
     bio: "Kim Gilmore is a dedicated real estate professional with extensive knowledge of the Chippewa Valley market. Known for exceptional client communication and a detail-oriented approach, Kim ensures every transaction is handled with care and professionalism.",
-    phone: "715-831-7077",
-    email: "info@haselwanderrealestatellc.com",
+    phone: "608-438-8565",
+    email: "kim@haselwanderrealestatellc.com",
   },
 ];
 

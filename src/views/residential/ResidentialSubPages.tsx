@@ -6,7 +6,7 @@ const parentLink = { label: "Residential", href: "/residential" };
 export const PrincetonValley = () => (
   <Layout>
     <PropertyPageTemplate
-      title="Princeton Valley"
+      title="Princeton Valley Residential Development"
       subtitle="An established residential development in the heart of the Chippewa Valley."
       status="Developed"
       description="Princeton Valley is a fully developed residential community offering quality single-family home lots. This established neighborhood features mature landscaping, well-maintained infrastructure, and convenient access to Eau Claire amenities. Content for this page will be provided by the client."
@@ -62,11 +62,11 @@ export const Hillcrest = () => (
 export const HwyP = () => (
   <Layout>
     <PropertyPageTemplate
-      title="Hwy P"
-      subtitle="Conveniently located residential lots along the Hwy P corridor."
+      title="Hwy P Lake Hallie - Grand Meadows"
+      subtitle="Conveniently located residential lots in Lake Hallie along the Hwy P corridor."
       status="To Be Developed"
-      description="The Hwy P development will offer conveniently located residential lots along the Hwy P corridor. Easy access to major roadways makes this a desirable location for single-family homes. Content for this page will be provided by the client."
-      location="Hwy P Corridor, WI"
+      description="The Hwy P Lake Hallie - Grand Meadows development will offer conveniently located residential lots along the Hwy P corridor in Lake Hallie. Easy access to major roadways makes this a desirable location for single-family homes. Content for this page will be provided by the client."
+      location="Lake Hallie, WI"
       features={["Convenient access", "Highway corridor location", "Residential lots", "Easy commute"]}
       parentLink={parentLink}
     />

@@ -20,11 +20,11 @@ const navItems: NavItem[] = [
     label: "Residential",
     href: "/residential",
     children: [
-      { label: "Princeton Valley", href: "/residential/princeton-valley" },
+      { label: "Princeton Valley Residential Development", href: "/residential/princeton-valley" },
       { label: "Woodhaven", href: "/residential/woodhaven" },
       { label: "Peterson", href: "/residential/peterson" },
       { label: "Hillcrest", href: "/residential/hillcrest" },
-      { label: "Hwy P", href: "/residential/hwy-p" },
+      { label: "Hwy P Lake Hallie - Grand Meadows", href: "/residential/hwy-p" },
       { label: "Wakanda Shores", href: "/residential/wakanda-shores" },
     ],
   },

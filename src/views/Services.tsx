@@ -73,7 +73,7 @@ const Services = () => {
                   {[
                     { label: "Established", value: "1965 — Over 60 years of trusted service" },
                     { label: "Service Area", value: "Eau Claire, Chippewa Falls & Dunn County" },
-                    { label: "Specialties", value: "Residential, Commercial, Office & Investment" },
+                    { label: "Specialties", value: "Residential, Commercial & Investment Real Estate" },
                     { label: "Foundation", value: "Integrity, accountability & professionalism" },
                   ].map((item, i) => (
                     <div key={item.label} className="flex gap-4 items-baseline">

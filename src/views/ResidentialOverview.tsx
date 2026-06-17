@@ -7,11 +7,11 @@ import FadeInSection from "@/components/FadeInSection";
 import { Button } from "@/components/ui/button";
 
 const developments = [
-  { name: "Princeton Valley", status: "Developed", href: "/residential/princeton-valley", desc: "An established residential development featuring quality single-family home lots." },
+  { name: "Princeton Valley Residential Development", status: "Developed", href: "/residential/princeton-valley", desc: "An established residential development featuring quality single-family home lots." },
   { name: "Woodhaven", status: "To Be Developed", href: "/residential/woodhaven", desc: "Upcoming residential development with premium lot opportunities." },
   { name: "Peterson", status: "To Be Developed", href: "/residential/peterson", desc: "Future residential lots in a sought-after location." },
   { name: "Hillcrest", status: "To Be Developed", href: "/residential/hillcrest", desc: "Planned development offering elevated views and spacious lots." },
-  { name: "Hwy P", status: "To Be Developed", href: "/residential/hwy-p", desc: "Conveniently located residential lots along the Hwy P corridor." },
+  { name: "Hwy P Lake Hallie - Grand Meadows", status: "To Be Developed", href: "/residential/hwy-p", desc: "Conveniently located residential lots in Lake Hallie along the Hwy P corridor." },
   { name: "Wakanda Shores", status: "To Be Developed", href: "/residential/wakanda-shores", desc: "Waterfront residential lots with exceptional natural surroundings." },
 ];
 

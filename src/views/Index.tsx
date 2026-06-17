@@ -8,9 +8,9 @@ import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 import { imageSrc } from "@/lib/image";
 const featuredProjects = [
-  { title: "Melby Subdivision", desc: "Premier commercial lots in a high-traffic corridor, ideal for retail and professional services.", img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80", href: "/commercial/melby" },
-  { title: "Grand Meadows", desc: "Investment-grade multifamily properties offering strong rental income potential.", img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80", href: "/investment/meadows" },
-  { title: "Residential Developments", desc: "Thoughtfully planned single-family home lots in the heart of the Chippewa Valley.", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80", href: "/residential" },
+  { title: "Melby", desc: "10-acre commercial site for development adjacent to Hwy 53 North and Melby Road, ideal for auto sales, church, or professional building.", img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80", href: "/commercial/melby" },
+  { title: "Hwy P Lake Hallie - Grand Meadows", desc: "Conveniently located residential lots in Lake Hallie along the Hwy P corridor.", img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80", href: "/residential/hwy-p" },
+  { title: "Princeton Valley Residential Development", desc: "An established residential development featuring quality single-family home lots in the Chippewa Valley.", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80", href: "/residential/princeton-valley" },
   { title: "Office Spaces", desc: "Professional office suites for lease in Eau Claire's premier business locations.", img: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80", href: "/office-space" },
 ];
 

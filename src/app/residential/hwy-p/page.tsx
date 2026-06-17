@@ -2,7 +2,7 @@ import { HwyP } from "@/views/residential/ResidentialSubPages";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-  title: "Hwy P",
+  title: "Hwy P Lake Hallie - Grand Meadows",
   path: "/residential/hwy-p",
 });
 
