@@ -193,11 +193,11 @@ const About = () => {
                     <div className="h-1 w-16 bg-primary rounded-full mb-6" />
                     <p className="font-body text-muted-foreground leading-relaxed mb-8">{agent.bio}</p>
                     <div className="flex flex-wrap gap-4">
-                      <a href={`tel:${agent.phone}`} className="flex items-center gap-2 text-sm font-body text-primary hover:text-gold-dark transition-colors">
+                      <a href={`tel:${agent.phone}`} className="flex items-center gap-2 text-base font-body text-primary hover:text-gold-dark transition-colors">
                         <Phone className="h-4 w-4" /> {agent.phone}
                       </a>
-                      <a href={`mailto:${agent.email}`} className="flex items-center gap-2 text-sm font-body text-primary hover:text-gold-dark transition-colors">
-                        <Mail className="h-4 w-4" /> Email
+                      <a href={`mailto:${agent.email}`} className="flex items-center gap-2 text-base font-body text-primary hover:text-gold-dark transition-colors">
+                        <Mail className="h-4 w-4" /> {agent.email}
                       </a>
                     </div>
                     <Button asChild className="mt-6 font-body">
