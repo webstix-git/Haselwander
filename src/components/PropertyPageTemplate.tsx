@@ -1,9 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { MapPin, ArrowRight } from "lucide-react";
+import { MapPin, ArrowRight, FileText, ExternalLink } from "lucide-react";
 import FadeInSection from "./FadeInSection";
 import { Button } from "./ui/button";
+
+interface PropertyDocument {
+  title: string;
+  href: string;
+}
 
 interface PropertyPageTemplateProps {
   title: string;
@@ -12,6 +17,7 @@ interface PropertyPageTemplateProps {
   description: string;
   location?: string;
   features?: string[];
+  documents?: PropertyDocument[];
   parentLink: { label: string; href: string };
 }
 
@@ -22,6 +28,7 @@ const PropertyPageTemplate = ({
   description,
   location,
   features,
+  documents,
   parentLink,
 }: PropertyPageTemplateProps) => {
   return (
@@ -76,6 +83,23 @@ const PropertyPageTemplate = ({
                       </li>
                     ))}
                   </ul>
+                </FadeInSection>
+              )}
+
+              {documents && documents.length > 0 && (
+                <FadeInSection delay={150}>
+                  <h3 className="font-heading text-xl font-semibold text-foreground mb-4">Property Documents</h3>
+                  <div className="flex flex-wrap gap-3">
+                    {documents.map((doc) => (
+                      <Button key={doc.href} asChild variant="outline">
+                        <a href={doc.href} target="_blank" rel="noopener noreferrer">
+                          <FileText className="h-4 w-4" />
+                          {doc.title}
+                          <ExternalLink className="h-4 w-4" />
+                        </a>
+                      </Button>
+                    ))}
+                  </div>
                 </FadeInSection>
               )}
 

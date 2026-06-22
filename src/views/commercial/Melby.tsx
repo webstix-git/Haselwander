@@ -16,6 +16,9 @@ const Melby = () => (
         "Commercial site for development",
         "Ideal for auto sales, church, or professional building",
       ]}
+      documents={[
+        { title: "Survey Map", href: "/documents/melby-survey-map.pdf" },
+      ]}
       parentLink={{ label: "Commercial", href: "/commercial" }}
     />
   </Layout>
